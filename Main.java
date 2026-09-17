@@ -3,10 +3,13 @@ public class Main{
         System.out.println("--- Iniciando simulador Poo");
 
         //Creamos un nuevo objeto usando la palabra clave 'new'
-        Jugador personajePrincipal = new Jugador("Joel");
+        Jugador jugador1 = new Jugador("Joel");
+        Jugador jugador2 = new Jugador("Mi rival Yo");
 
         //Hacemos que el objeto realice acciones
-        personajePrincipal.entrenar();
-        personajePrincipal.entrenar();
+        jugador1.start();
+        jugador2.start();
+
+        System.out.println("El arbitro dice: ¡Ambos jugadores estan entrenando al mismo tiempo!");
     }
 }
